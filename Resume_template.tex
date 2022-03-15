@@ -1,0 +1,400 @@
+%-------------------------
+% Resume in Latex
+% Author : Abey George
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% \usepackage{serif}
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{LightGrey}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{2pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemiii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.01in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Huge Umang Garg} & 
+    \href{https://www.linkedin.com/in/umang-garg/}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{Linkedin}}  ~
+    \href{https://github.com/umang-garg21}{\raisebox{-0.2\height}\faGithub\ \underline{Github}} ~\href{https://scholar.google.com/citations?user=uoffd9cAAAAJ&hl=en}{\raisebox{-0.2\height}\faGraduationCap\ \underline{Scholar}}
+    \\
+  \href{mailto:umang@ucsb.edu}{\raisebox{-0.1\height}\faEnvelope\  umang@ucsb.edu} ~  \small \href{tel:+1 805*7249299}{ \raisebox{-0.05\height}\faPhone\ +1-805-724-9299 ~}  & {\raisebox{-0\height}\faMapMarker\ U.C. Santa Barbara, CA} \\
+\end{tabular*}\\
+
+% \vspace{8pt}
+% {\color{Gray} \par\noindent\rule{\textwidth}{0.05pt}  }
+%---------- SUMMARY-----------
+% \vspace{-10pt}
+
+% \raisebox{.2ex}{\color{cvblue}{\normalsize{\textbf{\underline{Summary}}}}}: \normalsize{Summer-Internship $|$ Fall Co-op applicant: Result-driven computer engineer with with numerous software code design experiences. Understand value of patents as crucial assets, holding 3 US patent applications. A team player with good negotiation skills to cater to differing design goals across multiple teams.}
+
+
+  \vspace{-6pt}
+ 
+ %-----------PROGRAMMING SKILLS-----------
+\section{\normalsize{\color{cvblue}{TECHNICAL SKILLS}}}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{\normalsize{Languages:}}{ \normalsize{Python, C/ C++, MATLAB, Verilog/ Systemverilog, Assembly, HTML, RTL }} \\
+     
+     \vspace{3pt}
+     \textbf{\normalsize{Developer Tools/ Frameworks:}}{ \normalsize{Pytorch, Numpy, Pandas, Linux, Vivado Tool Suites, Cadence Virtuoso, DRC, LVS, PEX, Simulink, Arduino, Labview, GIT, Ansys HFSS, Zynq libraries, FPGAs, emerging memory. }}  \\
+    }}
+ \end{itemize}
+ 
+\vspace{-12pt}
+
+
+%-----------PROJECTS-----------
+\section{\normalsize{\color{cvblue}{PROJECTS}}}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+    
+      \resumeProjectHeading
+          {\href{https://github.com/umang-garg21/Pacman_Agent}{\textbf{\normalsize{Rational AI multi-agent design for PACMAN}} \href{https://github.com/umang-garg21/Pacman_Agent}{\raisebox{-0.1\height}\faExternalLink }} $|$ {\underline{Python, DSA, Heuristics }}}{Feb `21 - March `21}
+          \resumeItemListStart
+
+           \vspace{-2pt} \resumeItem{\normalsize{ Designing multi-adversary-aware intelligent Pacman AI agent: reflex-based, Minimax, Expectimax models.}}
+           
+           \vspace{2pt}
+            \resumeItem{\normalsize{Goal-tailored heuristic modelling. Implemented greedy search, $\alpha$-$\beta$ pruning, iterative deepening to time-limit.}}
+          \resumeItemListEnd 
+          \vspace{-5pt}
+    
+    % \resumeProjectHeading
+    %       {\href{https://github.com/UMANG-GARG-UCSB/Naive_Bayes_classifier}{\textbf{\normalsize{Naive Bayes Classifier for Athletic classification}} \href{https://github.com/UMANG-GARG-UCSB/Naive_Bayes_classifier}{\raisebox{-0.1\height}\faExternalLink }} $|$ {\underline{Python, Numpy, Pandas}}}{Jan 2021}
+    %       \resumeItemListStart
+    %         \resumeItem{\normalsize{Developed classifier to classify different athletes based on multiple features on athletic measurements. }}
+            
+
+    %       \resumeItemListEnd 
+    %       \vspace{-5pt}
+              \vspace{-5pt}
+          \resumeProjectHeading
+          {\href{https://github.com/umang-garg21/Unsupervised_SNN}{\textbf{\normalsize{Unsupervised SNN Learning for Digit Recognition}} \href{https://github.com/UMANG-GARG-UCSB/Unsupervised_SNN}{\raisebox{-0.1\height}\faExternalLink }} $|$ {\underline{SNNTorch $|$ Verilog}}}{Jan 2021}
+          \resumeItemListStart
+            
+            \vspace{-2pt}
+            \resumeItem{\normalsize{Implemented end-to-end neural network in digital RTL-logic with in-situ \textbf{online STDP learning} support.}}
+            
+            \vspace{2pt}
+               \vspace{-2pt}
+            \resumeItem{\normalsize{New local unsupervised learning mechanisms Inter-synaptic traces mechanisms tested. Lateral inhibition etc.}}
+
+          \resumeItemListEnd 
+          \vspace{-25pt}
+    
+    \resumeProjectHeading
+          {\textbf{\normalsize{Parallel time-domain Compute-in-memory (CIM) Spiking NN}} $|$ {\underline{Pytorch, Virtuoso}}}{Sept - Dec `21}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Collaborated and developed time-domain parallel spiking paradigm: \textbf{83x EDP improvement} over SOTA.}}
+            
+            \vspace{2pt}
+            
+            \resumeItem{\normalsize{Reimagined dataflow for better weight reuse. Tested on Fashion-MNIST, NMNIST, CIFAR-10 datasets.}}
+
+          \resumeItemListEnd 
+        
+          \vspace{-10pt}
+          \resumeProjectHeading
+          {\href{https://github.com/umang-garg21/ECE-Algo-HW-CoDesign-Project}{\textbf{\normalsize{Accelerating Auditory Recognition on edge- FPGA}} \href{{https://github.com/UMANG-GARG-UCSB/ECE-Algo-HW-CoDesign-Project}}{\raisebox{-0.1\height}\faExternalLink }} $|$ {\underline{Verilog, CompArch}}}{Sept - Dec `21}
+          \resumeItemListStart
+               \vspace{-2pt}
+            \resumeItem{\normalsize{Implemented hardware accelerator for audio recognition, achieving \textbf{~10x improvement} over CPU.}}
+            
+            \vspace{2pt}
+            
+            \resumeItem{\normalsize{Employed \textbf{Algo-HW co design} techniques: mixed precision processing, multiplier tree, pipeline, Max pool.}}
+
+          \resumeItemListEnd
+
+          \vspace{-10pt}
+          
+      \resumeProjectHeading
+          {\href{https://github.com/umang-garg21/TETRIS-on-FPGA}{\textbf{\normalsize{Developing `TETRIS' firmware on Xilinx FPGA}} \href{https://github.com/UMANG-GARG-UCSB/TETRIS-on-FPGA}{\raisebox{-0.1\height}\faExternalLink }} $|$ {\underline{Embedded C, QPNano, Vivado}}}{Sept - Dec `21}
+          \resumeItemListStart
+               \vspace{-2pt}
+            \resumeItem{\normalsize{Used QPNano \textbf{Hierarchical FSM} for designing game states on Xilinx Artix-A7 board on Vivado.}}
+            
+            \vspace{2pt}
+            
+            \resumeItem{\normalsize{Interfaced SPI LCDs and push buttons for interactive gameplay; ensured correct \textbf{interrupt handling}.}}
+
+          \resumeItemListEnd 
+
+    \vspace{-10pt}
+
+          \resumeProjectHeading
+          {\href{}{\textbf{\normalsize{Hyperspectral Aerial-Vehicle Anomaly detection at Edge }} \href{https://github.com/UMANG-GARG-UCSB/TETRIS-on-FPGA}{\raisebox{-0.1\height}\faExternalLink }} $|$ {\underline{MATLAB, Virtuoso}}}{May '19 - Aug '19}
+          \resumeItemListStart
+               \vspace{-2pt}
+               
+       \resumeItem{\normalsize{          Worked on hyperspectral aerial anomaly detection techniques and multi-band flexible-grain filter design.}}
+  
+        \vspace{2pt}
+            
+        \resumeItem{\normalsize{ Co-integrated anomaly detection unit with hypersectral imager for system-constrained perception. }}
+
+          \resumeItemListEnd 
+
+          
+          
+    \resumeSubHeadingListEnd
+\vspace{-8pt}
+
+%
+%-----------EXPERIENCE-----------
+\section{\normalsize{\color{cvblue}{INDUSTRY EXPERIENCE}}}
+  \resumeSubHeadingListStart
+      
+          \resumeSubheading
+      {QpiAI Technologies \href{https://qpiai.tech/}{\raisebox{-0.1\height}\faExternalLink } $|$ \underline{\normalfont{\textit{Design Engineer}}}}{Dec `20 -- Jul `21 $|$ \textit{\small{Bangalore, India}}} 
+      {}{}
+      \vspace{-13pt}
+      
+      \resumeItemListStart
+       \resumeItem{\normalsize{ Developed ``Auxiliary Pulse Cancellation” code, boosting qubit fidelity times by $10$x. \textbf{2 US patents.} }}
+      \resumeItem{\normalsize{Filed \textbf{US patent} proposing an extensively scalable in-silco solution for magnetic field control for qubits. }}
+        \resumeItem{\normalsize{Designed a rail-to-rail cryogenic Variable gain amplifier: deployed as \textbf{standalone IP} for qubit control.}}
+ 
+   
+        
+       
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+
+%-----------EDUCATION-----------
+\section{\normalsize{\color{cvblue}{EDUCATION}}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California, Santa Barbara (UCSB)}{Sept 2021 -- Present}
+      { M.S. in Computer Engineering, Dept. of ECE; GPA: 3.90}{Santa Barbara, CA}
+  \resumeSubHeadingListEnd
+  \vspace{-8pt}
+  \resumeSubHeadingListStart
+     \resumeSubheading
+      {Birla Institute of Science and Technology, Pilani}{Aug 2016 --  May 2020}
+      {B.E. in Electronics and Instrumentation; GPA - 8.4}{Pilani, India}
+  \resumeSubHeadingListEnd
+
+% - Literature study on aerial anomaly detection and image recognition techniques
+% - Used MATLAB for filter size design for a better target detection
+% - Worked to deploy and merge detection at the image-sensor edge with fine-grain adjustments accounting for system constraints
+ \vspace{-10pt}
+
+
+%------RELEVANT COURSEWORK-------
+\section{\normalsize{\color{cvblue}{RELEVANT COURSEWORK}}}
+    % %\resumeSubHeadingListStart
+    %     \begin{multicols}{4}
+    %         \begin{itemize}[itemsep=-2pt, parsep=5pt]
+    %             \item Artificial Intelligence
+    %             \item HW-Algorithm Co-Design for AI Tasks
+    %             \item Spiking Neural Networks
+    %             \item Embedded Systems Development
+    %             \item Probabilistic Computing
+    %             \item Deep Neural Networks
+    %             \item StatMech. to Quantum Computing 
+    %             \item Analog and Digital VLSI Design
+    %             \item Computer Architecture
+    %             \item RF Microelectronics
+    %             \item Antenna Theory and Design
+
+    %         \end{itemize}
+    %     \end{multicols}
+    %     \vspace*{2.0\multicolsep}
+    % %\resumeSubHeadingListEnd
+
+\begin{itemize}[leftmargin=0.15in, label={}]
+\vspace{2pt}
+    \small{\item{
+     \textbf{\normalsize{Graduate:}}{ \normalsize{Data Structures and Algorithms, Artificial Intelligence, Adv. Deep Neural Networks (\textit{upcoming}), Software-HW Co-Design,  Embedded Systems, Neuromorphic Computing, Probabilistic Computing }} \\
+    }}
+    \vspace{1pt}
+    \small{\item{
+     \textbf{\normalsize{UnderGraduate:}}{ \normalsize{Analog and Digital VLSI Design, Computer Architecture, RF Microelectronics}} \\
+    }}
+    
+ \end{itemize}
+ \vspace{-15pt}
+
+
+%------Patents and Publications---------
+
+\section{\normalsize{\color{cvblue}{\href{https://scholar.google.com/citations?user=uoffd9cAAAAJ&hl=en}{PATENTS and PUBLICATIONS}}}}
+
+% I filed \textbf{3 US patents} during my short 6-month stint at QpiAI. I have published in 3 top-tier conferences and 1 high-impact journal related to emerging unsupervised ML learning algorithms (contrasitive STDP).
+Publication [1]. {Time-domain Parallel Compute-in-memory Spiking Neural Network Architecture and acceleration }
+
+% \href{https://scholar.google.com/citations?user=uoffd9cAAAAJ&hl=en}{Patent [1].} Method and System for generating and regulating local magnetic field variations for spin-qubit manipulation using microstructures in Integrated circuits - \href{https://scholar.google.com/citations?user=uoffd9cAAAAJ&hl=en}{US Appl. Number - 202141007818}.\\
+% \vspace{5pt}
+
+\href{https://scholar.google.com/citations?user=uoffd9cAAAAJ&hl=en}{Patent [2].} Method and System for designing hybrid quantum-classical architecture (Q-arc) in quantum computers for individual qubit control in distributed fashion. \textit{(\underline{\href{https://scholar.google.com/citations?user=uoffd9cAAAAJ&hl=en}{3 additional major-Conference publications and 2 more patents}})} 
+
+%-----------INVOLVEMENT---------------
+% \section{\normalsize{EXTRACURRICULAR}}
+%     \resumeSubHeadingListStart
+%         \resumeSubheading{Organization Name \href{Certificate Proof link}{\raisebox{-0.1\height}\faExternalLink } }{MM YYYY -- MM YYYY}{\underline{Role}}{Location}
+%             \resumeItemListStart
+%                 \resumeItem{\normalsize{About the role \textbf{and responsibilities carried out.}}}
+%                 \resumeItem{\normalsize{Participation Certificate. \href{ParticipationCertificateLink.com}{\raisebox{-0.1\height}\faExternalLink }}}
+%             \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+%  \vspace{-11pt}
+ 
+ %-----------CERTIFICATIONS---------------
+% \section{\normalsize{CERTIFICATIONS}}
+
+% $\sbullet[.75] \hspace{0.1cm}$ {\href{certificateLink.com}{ReactJS \& Redux - Udemy}} \hspace{1.6cm}
+% $\sbullet[.75] \hspace{0.1cm}$ {\href{certificateLink.com}{Java}} \hspace{2.59cm}
+% $\sbullet[.75] \hspace{0.2cm}${\href{certificateLink.com} {Command Line in Linux - Coursera}}\\
+
+% $\sbullet[.75] \hspace{0.2cm}${\href{certificateLink.com}{Python for Data Science - XIE}} \hspace{1cm}
+% $\sbullet[.75] \hspace{0.1cm}$ {\href{certificateLink.com}{SQL}} \hspace{2.6cm}
+% $\sbullet[.75] \hspace{0.2cm}${\href{certificateLink.com}{Microsoft AI Classroom - Microsoft}} \\
+
+% $\sbullet[.75] \hspace{0.2cm}${\href{certificateLink.com}{\textbf{5 Stars} in \textbf{C++} \& \textbf{SQL} \href{certificateLink.com}{\raisebox{-0.1\height}\faExternalLink }}}\hspace{1.45cm}
+% $\sbullet[.75] \hspace{0.2cm}${\href{certificateLink.com}{MongoDB Basics}} \hspace{0.5cm}
+% $\sbullet[.75] \hspace{0.2cm}${\href{certificateLink.com}{NodeJS with Express \& MongoDB - Udemy}} \\
+
+
+\end{document}
